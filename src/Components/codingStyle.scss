@@ -1,0 +1,52 @@
+.home_code {
+  display: flex;
+  .current_repo {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    .profile_pic {
+      padding: 10px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      border-radius: 4px;
+      justify-content: center;
+      img {
+        max-width: 120px;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 4px;
+      }
+    }
+    .repo_body {
+      padding: 10px;
+      .sub_description {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .star_issue {
+          display: flex;
+          span:first-child {
+            margin-right: 20px;
+          }
+        }
+      }
+    }
+    .go_down {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .repo_body {
+    text-align: center ;
+    .sub_description {
+      flex-direction: column;
+    }
+  }
+}
