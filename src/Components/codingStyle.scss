@@ -1,5 +1,17 @@
 .home_code {
   display: flex;
+
+    button {
+      width: fit-content;
+      height: fit-content;
+      border-radius: 4px;
+      background-color: #cccccc;
+      padding: 5px 10px;
+      outline: none;
+      border: 1px solid #cccccc;
+      margin-left: 20px;
+    }
+  
   .current_repo {
     border: 1px solid #cccccc;
     border-radius: 4px;
@@ -44,7 +56,7 @@
 
 @media screen and (max-width: 992px) {
   .repo_body {
-    text-align: center ;
+    text-align: center;
     .sub_description {
       flex-direction: column;
     }
